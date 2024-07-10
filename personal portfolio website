@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: #4CAF50; /* Green */
+            color: white;
+            padding: 1.2rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .home {
+            background: #87CEFA; /* LightSkyBlue */
+        }
+        .about {
+            background: #FFD700; /* Gold */
+        }
+        .skills {
+            background: #FF69B4; /* HotPink */
+        }
+        .projects {
+            background: #BA55D3; /* MediumOrchid */
+        }
+        .contact {
+            background: #FF6347; /* Tomato */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 1rem;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills ul li {
+            background: #fff;
+            margin: 0.2rem 0;
+            padding: 2rem;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #4CAF50; /* Green */
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <img src="C:\Users\deepi\OneDrive\Pictures\girl image.jpg" alt="Profile Picture" class="profile-pic">
+            <p>Hi, I'm sumana, a passionate web developer.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>A bit about me</h2>
+            <p>I am pursuing 3rd B.Tech and I have much interest in web development.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <p>Here are some skills I am shined in.</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <div>
+                    <h3>Project 1</h3>
+                    <p>My first project is a Todo list. It showcases my skills in front-end development and design.</p>
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Project 2</h3>
+                    <p>My second project is E-commerce web application.it showcases my skills in front-end development and design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me at sumana@gmail.com.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 sumana. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
